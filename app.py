@@ -90,7 +90,7 @@ if st.sidebar.button("Log In"):
     else:
         t.handle_invalid_credentials()
 
-friend_id_input = st.sidebar.text_input("Add a Friend", placeholder="e.g., 277427")
+friend_id_input = st.sidebar.text_input("Add a Friend", placeholder="e.g., 277427, 278026, 277523, 276680")
 if st.sidebar.button("Add Friend"):
     if friend_id_input.isdigit():
         friend_id = int(friend_id_input)
