@@ -39,7 +39,7 @@ selected_book_df = books_df[books_df['ISBN'] == st.session_state['current_book_i
 col1, col2 = st.columns([3, 5])
 
 with col1:
-    st.image(selected_book_df['Image-URL-L'].values[0], use_column_width=True)
+    st.image(selected_book_df['Image-URL-L'].values[0], use_container_width=True)
 
 with col2:
     st.header(selected_book_df['Book-Title'].values[0])
