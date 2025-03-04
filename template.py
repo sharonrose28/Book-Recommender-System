@@ -13,7 +13,7 @@ def update_friend_list(friends_list):
 def display_book(column, book_info):
     with column:
         st.button('📚', key=random.random(), on_click=set_current_book, args=(book_info['ISBN'],))
-        st.image(book_info['Image-URL-M'], use_column_width=True)
+        st.image(book_info['Image-URL-M'], use_container_width=True)
         st.caption(book_info['Book-Title'])
 
 def show_recommendations(book_df):
